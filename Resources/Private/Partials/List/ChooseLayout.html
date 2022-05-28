@@ -1,0 +1,29 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+      xmlns:n="http://typo3.org/ns/GeorgRinger/News/ViewHelpers"
+      data-namespace-typo3-fluid="true">
+<!--
+	=====================
+		Partials/List/ChooseLayout.html
+-->
+
+<f:switch expression="{settings.templateLayout}">
+    <f:case value="1">
+        <f:render partial="List/CardGrid" arguments="{news: news, settings: settings, pagination:pagination, contentObjectData:contentObjectData, columns: 1}" />
+    </f:case>
+    <f:case value="2">
+        <f:render partial="List/CardGrid" arguments="{news: news, settings: settings, pagination:pagination, contentObjectData:contentObjectData, columns: 2}" />
+    </f:case>
+    <f:case value="3">
+        <f:render partial="List/CardGrid" arguments="{news: news, settings: settings, pagination:pagination, contentObjectData:contentObjectData, columns: 3}" />
+    </f:case>
+    <f:case value="4">
+        <f:render partial="List/CardGrid" arguments="{news: news, settings: settings, pagination:pagination, contentObjectData:contentObjectData, columns: 4}" />
+    </f:case>
+    <f:case value="99">
+        <f:render partial="List/CardSlider" arguments="{news: news, settings: settings, pagination:pagination, contentObjectData:contentObjectData}" />
+    </f:case>
+    <f:defaultCase>
+        <f:render partial="List/List" arguments="{news: news, settings: settings, pagination:pagination, contentObjectData:contentObjectData}" />
+    </f:defaultCase>
+</f:switch>
+</html>

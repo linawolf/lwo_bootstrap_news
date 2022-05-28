@@ -1,0 +1,8 @@
+// EXT:News =================================================================================================
+plugin.tx_news {
+    view {
+        templateRootPaths.1653730581098 = EXT:lwo_bootstrap_news/Resources/Private/Templates/
+        partialRootPaths.1653730581098 = EXT:lwo_bootstrap_news/Resources/Private/Partials/
+        layoutRootPaths.1653730581098 = EXT:lwo_bootstrap_news/Resources/Private/Layouts/
+    }
+}

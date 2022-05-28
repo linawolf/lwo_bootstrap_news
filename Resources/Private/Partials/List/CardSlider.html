@@ -1,0 +1,45 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+      xmlns:n="http://typo3.org/ns/GeorgRinger/News/ViewHelpers"
+      data-namespace-typo3-fluid="true">
+<!--
+	=====================
+		Partials/List/CardSlider.html
+-->
+<div id="news-container-{contentObjectData.uid}">
+    <f:if condition="{settings.hidePagination}">
+        <f:then>
+            <f:render section="NewsList" arguments="{news:news, settings:settings, contentObjectData:contentObjectData}"/>
+        </f:then>
+        <f:else>
+            <f:if condition="{settings.list.paginate.insertAbove}">
+                <f:render partial="List/Pagination" arguments="{pagination: pagination.pagination, paginator: pagination.paginator}" />
+            </f:if>
+            <f:render section="NewsList" arguments="{news:pagination.paginator.paginatedItems, settings:settings, contentObjectData:contentObjectData}"/>
+            <f:if condition="{settings.list.paginate.insertBelow}">
+                <f:render partial="List/Pagination" arguments="{pagination: pagination.pagination, paginator: pagination.paginator}" />
+            </f:if>
+        </f:else>
+    </f:if>
+</div>
+
+<f:section name="NewsList">
+    <div id="carouselControls{contentObjectData.uid}" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <f:for each="{news}" as="newsItem" iteration="iterator">
+                <div class="carousel-item {f:if(condition: '{iterator.index} == 0', then: 'active')}">
+                    <f:render partial="List/CardItem" arguments="{newsItem: newsItem,settings:settings,iterator:iterator,cardClass: ''}" />
+                </div>
+            </f:for>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselControls{contentObjectData.uid}" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselControls{contentObjectData.uid}" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+</f:section>
+
+</html>

@@ -1,0 +1,9 @@
+
+tx_news.templateLayouts {
+    0 = List
+    1 = Cards 1 Column
+    2 = Cards 2 Columns
+    3 = Cards 3 Columns
+    4 = Cards 5 Columns
+    99 = Cards Slider
+}
