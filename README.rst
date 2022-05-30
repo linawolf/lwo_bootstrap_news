@@ -1,6 +1,6 @@
 
 ======================
-LWO Bootstrap Buttons
+LWO Bootstrap News
 ======================
 
 Standalone Buttons for the Bootstrap Package
