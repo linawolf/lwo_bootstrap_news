@@ -3,7 +3,7 @@
 LWO Bootstrap News
 ======================
 
-Standalone Buttons for the Bootstrap Package
+Bootstrap Package compatible News Templates
 
 :Repository:  https://github.com/linawolf/lwo_bootstrap_news
 :Read online: https://docs.typo3.org/p/lwo_bootstrap_news/main/en-us/
