@@ -17,6 +17,11 @@
 			<f:render partial="Detail/PrevNext" arguments="{_all}" />
 			<div class="header">
 				<h1 itemprop="headline">{newsItem.title}</h1>
+				<f:if condition="{newsItem.subheader}">
+					<h2 class="subheader">
+						{newsItem.subheader}
+					</h2>
+				</f:if>
 			</div>
 			<f:render partial="Detail/MetadataContent" arguments="{_all}" />
 			<f:render partial="Detail/Content" arguments="{_all}" />

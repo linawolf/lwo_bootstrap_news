@@ -46,6 +46,11 @@
                 <span itemprop="headline">{newsItem.title}</span>
             </n:link>
         </h3>
+        <f:if condition="{newsItem.subheader}">
+            <h4 class="card-subtitle">
+                {newsItem.subheader}
+            </h4>
+        </f:if>
         <h4 class="card-info">
 
             <!-- date -->

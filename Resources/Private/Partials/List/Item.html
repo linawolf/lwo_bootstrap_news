@@ -14,6 +14,12 @@
 				<span itemprop="headline">{newsItem.title}</span>
 			</n:link>
 		</h3>
+
+		<f:if condition="{newsItem.subheader}">
+			<h4>
+				{newsItem.subheader}
+			</h4>
+		</f:if>
 	</div>
 
 	<f:if condition="{newsItem.mediaPreviews}">
