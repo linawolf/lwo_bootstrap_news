@@ -18,3 +18,11 @@ plugin.tx_news {
         }
     }
 }
+
+page.10 = FLUIDTEMPLATE
+page.10 {
+    dataProcessing {
+        35 = GeorgRinger\News\DataProcessing\AddNewsToMenuProcessor
+        35.menus = breadcrumb
+    }
+}
