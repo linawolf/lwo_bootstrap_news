@@ -1,0 +1,18 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+      xmlns:n="http://typo3.org/ns/GeorgRinger/News/ViewHelpers"
+      data-namespace-typo3-fluid="true">
+<f:render partial="Detail/Teaser" arguments="{_all}" />
+
+<f:render partial="Detail/MediaContainer" arguments="{media: newsItem.mediaNonPreviews, settings:settings}" />
+
+<!-- main text -->
+<div class="news-text-wrap" itemprop="articleBody">
+    <f:format.html>{newsItem.bodytext}</f:format.html>
+</div>
+
+<f:if condition="{newsItem.contentElements}">
+    <!-- content elements -->
+    <f:cObject typoscriptObjectPath="lib.tx_news.contentElementRendering">{newsItem.contentElementIdList}</f:cObject>
+</f:if>
+
+</html>

@@ -13,7 +13,10 @@ $EM_CONF[$_EXTKEY] = [
     'category' => 'templates',
     'constraints' => [
         'depends' => [
-            'typo3' => '10.4.0-11.5.99',
+            'typo3' => '11.5.0-12.99.99',
+            'news' => '*',
+        ],
+        'suggests' => [
             'bootstrap_package' => '*'
         ]
     ],
@@ -29,5 +32,5 @@ $EM_CONF[$_EXTKEY] = [
     'author' => 'Lina Wolf',
     'author_email' => '112@linawolf.de',
     'author_company' => 'private',
-    'version' => '11.0.1',
+    'version' => '11.1.0',
 ];

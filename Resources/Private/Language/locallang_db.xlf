@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2014-06-02T11:48:25Z" product-name="lwo_bootstrap_news">
+		<header/>
+		<body>
+			<trans-unit id="tx_news_domain_model_news.subheader" xml:space="preserve">
+				<source>Subheader</source>
+			</trans-unit>
+			<trans-unit id="tx_news_domain_model_news.detail_style" xml:space="preserve">
+				<source>Style of the detail page</source>
+			</trans-unit>
+			<trans-unit id="tx_news_domain_model_news.content_elements_col2" xml:space="preserve">
+				<source>Content elements, column 2</source>
+			</trans-unit>
+			<trans-unit id="tx_news_domain_model_news.content_elements_col3" xml:space="preserve">
+				<source>Content elements, column 3</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

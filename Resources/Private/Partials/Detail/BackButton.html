@@ -1,0 +1,12 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+      xmlns:n="http://typo3.org/ns/GeorgRinger/News/ViewHelpers"
+      data-namespace-typo3-fluid="true">
+<f:if condition="{settings.backPid}">
+    <!-- Link Back -->
+    <div class="news-backlink-wrap">
+        <f:link.page pageUid="{settings.backPid}" class="btn btn-default">
+            <f:translate key="back-link" />
+        </f:link.page>
+    </div>
+</f:if>
+</html>

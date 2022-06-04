@@ -1,0 +1,26 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+      xmlns:n="http://typo3.org/ns/GeorgRinger/News/ViewHelpers"
+      data-namespace-typo3-fluid="true">
+
+<n:renderMedia news="{newsItem}" imgClass="img-responsive" videoClass="video-wrapper" audioClass="audio-wrapper">
+
+    <f:switch expression="{newsItem.detailStyle}">
+        <f:defaultCase>
+            <f:render partial="Detail/Content/Content100" arguments="{_all}" />
+        </f:defaultCase>
+        <f:case value="33-66">
+            <f:render partial="Detail/Content/Content3366" arguments="{_all}" />
+        </f:case>
+        <f:case value="50-50">
+            <f:render partial="Detail/Content/Content5050" arguments="{_all}" />
+        </f:case>
+        <f:case value="66-33">
+            <f:render partial="Detail/Content/Content6633" arguments="{_all}" />
+        </f:case>
+        <f:case value="33-33-33">
+            <f:render partial="Detail/Content/Content333333" arguments="{_all}" />
+        </f:case>
+    </f:switch>
+
+</n:renderMedia>
+</html>
