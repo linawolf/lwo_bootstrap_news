@@ -5,4 +5,15 @@ plugin.tx_news {
         partialRootPaths.1653730581098 = EXT:lwo_bootstrap_news/Resources/Private/Partials/
         layoutRootPaths.1653730581098 = EXT:lwo_bootstrap_news/Resources/Private/Layouts/
     }
+    settings {
+        detail {
+            media {
+                image {
+
+                    maxWidth = 700
+                    maxHeight = 700
+                }
+            }
+        }
+    }
 }
