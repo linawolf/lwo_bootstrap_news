@@ -6,6 +6,7 @@ plugin.tx_news {
         layoutRootPaths.1653730581098 = EXT:lwo_bootstrap_news/Resources/Private/Layouts/
     }
     settings {
+        icons.libary = {$plugin.tx_news.settings.icons.libary}
         detail {
             media {
                 image {

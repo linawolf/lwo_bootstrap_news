@@ -1,1 +1,6 @@
-<INCLUDE_TYPOSCRIPT: source="DIR:EXT:lwo_bootstrap_news/Configuration/TypoScript/Constants" extensions="typoscript">
+plugin.tx_news {
+    settings {
+        # cat=lwo_bootstrap_news; type=options[None, Fontawesome5]; label=Icon library
+        icons.libary = none
+    }
+}
