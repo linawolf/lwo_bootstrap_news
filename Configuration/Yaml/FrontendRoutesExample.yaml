@@ -1,0 +1,19 @@
+routeEnhancers:
+  News:
+    type: Extbase
+    limitToPages:
+      - 7
+      - 13
+    extension: News
+    plugin: Pi1
+    routes:
+      -
+        routePath: '/{news-title}'
+        _controller: 'News::detail'
+        _arguments:
+          news-title: news
+    aspects:
+      news-title:
+        type: PersistedAliasMapper
+        tableName: tx_news_domain_model_news
+        routeFieldName: path_segment
