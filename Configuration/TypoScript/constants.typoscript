@@ -1,1 +1,5 @@
-<INCLUDE_TYPOSCRIPT: source="DIR:EXT:lwo_bootstrap_news/Configuration/TypoScript/Constants" extensions="typoscript">
+lwo_bootstrap_news {
+
+    # cat=lwo_bootstrap_news: config/150/120; type=options[None,Fontawesome5,Glypicons]; label=Use the following Icons
+    useIcons = None
+}

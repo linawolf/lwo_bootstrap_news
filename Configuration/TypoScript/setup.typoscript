@@ -5,4 +5,9 @@ plugin.tx_news {
         partialRootPaths.1653730581098 = EXT:lwo_bootstrap_news/Resources/Private/Partials/
         layoutRootPaths.1653730581098 = EXT:lwo_bootstrap_news/Resources/Private/Layouts/
     }
+    settings {
+        lwo_bootstrap_news {
+            useIcons = {$lwo_bootstrap_news.useIcons}
+        }
+    }
 }
