@@ -1,5 +1,5 @@
 <f:if condition="{pagination.allPageNumbers -> f:count()} > 1">
-    <nav aria-label="Weitere Datensätze anzeigen">
+    <nav aria-label="{f:translate(key: 'LLL:EXT:lwo_bootstrap_news/Resources/Private/Language/locallang.xlf:showMore')}">
         <ul class="pagination">
             <f:if condition="{pagination.previousPageNumber} && {pagination.previousPageNumber} >= {pagination.firstPageNumber}">
                 <f:then>
