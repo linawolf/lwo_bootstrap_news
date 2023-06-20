@@ -13,8 +13,8 @@ $EM_CONF[$_EXTKEY] = [
     'category' => 'templates',
     'constraints' => [
         'depends' => [
-            'typo3' => '11.5.0-12.99.99',
-            'news' => '*',
+            'typo3' => '11.5.0 - 12.4.99',
+            'news' => '9.0.0 - 10.99.99',
         ],
         'suggests' => [
             'bootstrap_package' => '*'
