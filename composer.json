@@ -8,7 +8,7 @@
     "require": {
         "php": "^7.4 || ^8.0",
         "typo3/cms-core": "^11.5 || ^12.4",
-        "georgringer/news": "^10.0 || 11.0"
+        "georgringer/news": "^11.0 || ^12.0"
     },
     "suggest": {
         "bk2k/bootstrap-package": "Bootstrap Package with Bootstrap 5 enabled"
